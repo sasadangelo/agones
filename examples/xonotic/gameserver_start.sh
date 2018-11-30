@@ -1,0 +1,1 @@
+minikube start --kubernetes-version v1.9.4 --vm-driver virtualbox --bootstrapper=localkube --extra-config=apiserver.Admission.PluginNames=NamespaceLifecycle,LimitRanger,ServiceAccount,PersistentVolumeLabel,DefaultStorageClass,DefaultTolerationSeconds,MutatingAdmissionWebhook,ValidatingAdmissionWebhook,ResourceQuota --extra-config=apiserver.Authorization.Mode=RBAC
